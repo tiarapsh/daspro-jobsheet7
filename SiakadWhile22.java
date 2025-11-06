@@ -9,25 +9,25 @@ public class SiakadWhile22 {
 
         while ( i <jml){
             System.out.println("Input grade for student no- " + (i+1) + ": ");
-            int nilai = scan.nextInt();
+             grade = scan.nextInt();
 
-            if (nilai < 0 || nilai > 100){
+            if (grade < 0 || grade > 100){
                 System.out.println("Invalid grade, please input valid grade.");
                 continue;
             }
 
-            if (nilai > 80 && nilai <=100){
+            if (grade > 80 && grade <=100){
                 System.out.println("Grade for student no- " + (i+1) + " is A");
                 System.out.println("Good, keep the grade! ");
-            } else if ( nilai > 73 && nilai <= 80){
+            } else if ( grade > 73 && grade <= 80){
                 System.out.println("Grade for student no- " + (i+1) + " is B+");
-            } else if ( nilai > 65 && nilai <= 73){
+            } else if ( grade > 65 && grade <= 73){
                 System.out.println("Grade for student no- " + (i+1) + " is B");
-            } else if ( nilai > 60 && nilai <= 65){
+            } else if ( grade > 60 && grade <= 65){
                 System.out.println("Grade for student no- " + (i+1) + " is C+");
-            } else if ( nilai > 50 && nilai <= 60){
+            } else if ( grade > 50 && grade <= 60){
                 System.out.println("Grade for student no- " + (i+1) + " is C");
-            } else if ( nilai > 39 && nilai <= 50){
+            } else if ( grade > 39 && grade <= 50){
                 System.out.println("Grade for student no- " + (i+1) + " is D");
             } else {
                 System.out.println("Grade for student no- " + (i+1) + " is E");

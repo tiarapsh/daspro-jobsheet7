@@ -7,7 +7,7 @@ public class SiakadFor22 {
         int passCount = 0, failCount = 0;
         String status;
         for (int i = 1; i <= 10; i++) {
-            System.out.println("Input grade for student no- " + i + ": ");
+            System.out.println("Enter the grade of the " + i + " student: ");
             grade = scan.nextDouble();
             if (grade > highest) {
                 highest = grade;
@@ -23,9 +23,8 @@ public class SiakadFor22 {
             }
         }
        
-        System.out.println("Student passed");
-        System.out.println("Highest grade is: " + highest);
-        System.out.println("Lowest grade is: " + lowest);
+        System.out.println("The Highest grade : " + highest);
+        System.out.println("The Lowest grade : " + lowest);
         System.out.println("Number of students passed: " + passCount);
         System.out.println("Number of students failed: " + failCount);
     }
