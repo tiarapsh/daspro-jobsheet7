@@ -8,7 +8,7 @@ public class TicketPrice {
         int totalTickets = 0;  
 
         while (true) {
-            System.out.print("Enter number of tickets purchased : ");
+            System.out.print("Enter number of tickets purchased (0 to end): ");
             int numberOfTickets = scan.nextInt();
 
             if (numberOfTickets == 0) {
@@ -37,10 +37,10 @@ public class TicketPrice {
             totalTickets += numberOfTickets;
             totalSales += finalPrice;
         }
-
         System.out.println("\n=== Daily Transaction Summary ===");
         System.out.println("Total tickets sold: " + totalTickets);
         System.out.println("Total sales: Rp" + totalSales);
+
 
         scan.close();
     }
