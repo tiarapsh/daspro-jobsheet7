@@ -14,11 +14,11 @@ public class CafeDoWhile22 {
                 System.out.println("Order cancelled.");
                 break;
             }
-            System.out.println("Input number of Coffee: ");
+            System.out.print("Input number of Coffee: ");
             coffee = scan.nextInt();
-            System.out.println("Input number of Tea: ");
+            System.out.print("Input number of Tea: ");
             tea = scan.nextInt();
-            System.out.println("Input number of Bread: ");
+            System.out.print("Input number of Bread: ");
             bread = scan.nextInt();
 
             double total = (coffee * CoffeePrice) + (tea * TeaPrice) + (bread * BreadPrice);

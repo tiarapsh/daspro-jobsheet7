@@ -6,11 +6,15 @@ public class Parking {
         int category, duration, total = 0;
 
         do {
-            System.out.print("1: Car\n2: Motorcycle\n3: Exit\nInput vehicle category:  ");
+            System.out.print("1: Car\n2: Motorcycle\n0: Exit\nInput vehicle category:  ");
             category = scan.nextInt();
 
+               if (category == 0) {
+                break;
+            }
+
             if (category == 1 || category == 2) {
-                System.out.println("Input parking duration (hours): ");
+                System.out.print("Input parking duration (hours): ");
                 duration = scan.nextInt();
 
               if (duration > 5) {
@@ -20,9 +24,13 @@ public class Parking {
                 } else if (category == 2) {
                     total += duration * 2000;
                 }
+            } else {
+                System.out.println("Invalid category! Please enter 1, 2, or 3.");
             }
+
         } while (category != 0);
 
+        System.out.println("=== Parking Summary ===");
         System.out.println("Total parking fee: Rp" + total);
         scan.close();
     }
