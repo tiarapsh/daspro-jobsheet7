@@ -14,9 +14,7 @@ public class TicketPrice {
             if (numberOfTickets == 0) {
                 System.out.println("Transaction completed.");
                 break;
-            }
-
-            if (numberOfTickets < 0) {
+            } else if (numberOfTickets < 0) {
                 System.out.println("Invalid number of tickets. Please enter a positive number!");
                 continue;
             }
