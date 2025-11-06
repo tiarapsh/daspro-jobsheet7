@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TicketPrice {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        final double ticketPrice = 50000;
+        double ticketPrice = 50000;
         double totalSales = 0; 
         int totalTickets = 0;  
 
